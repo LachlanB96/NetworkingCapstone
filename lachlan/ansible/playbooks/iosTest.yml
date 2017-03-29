@@ -1,0 +1,32 @@
+---
+- hosts: all
+  gather_facts: no
+  connection: local
+ 
+  tasks:
+  - name: Authentication
+    include_vars: authentication.yml
+
+  - name: setting variables
+    set_fact:
+      provider:
+        host: "{{ inventory_hostname }}"
+        username: "{{ creds['username'] }}"
+        password: "{{ creds['password'] }}"
+        auth_pass: "{{ creds['auth_pass'] }}"
+
+  #- name: Authenticate with RSA key from ./rsa/known_hosts
+    #ios_command:
+      #provider:
+        #ssh_keyfile: rsa/known_hosts
+        #auth_pass: "pass"
+
+  - name: run show version on remote devices
+    ios_command:
+      provider: "{{ provider }}"
+      commands: sho ip int brief | include FastEthernet.*up
+    register: interfaces
+
+  - debug: var=interfaces.stdout_lines
+
+  - name:
