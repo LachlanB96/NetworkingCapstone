@@ -1,0 +1,7 @@
+[dev]
+esw1 ansible_host=10.10.10.1 user=root password=P@ssw0rd1101 enable=P@ssw0rd1101
+
+[dev:vars]
+ansible_user=root
+ansible_pass=P@ssw0rd1101
+ansible_auth=P@ssw0rd1101

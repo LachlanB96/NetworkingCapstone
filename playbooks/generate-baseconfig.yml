@@ -1,0 +1,7 @@
+--
+- name: Generate init config
+  hosts: all
+  gather_facts: no
+  connection: local
+  roles:
+  - base-config

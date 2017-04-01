@@ -1,0 +1,15 @@
+---
+- name: Merge all base configurations
+  hosts: esw1
+
+  tasks:
+  - name: Push base configuration
+    napalm_install_config:
+      hostname="{{ansible_host}}"
+      username="{{ansible_user}}"
+      dev_os={{os}}
+      password="{{ansible_pass}}"
+      config_file={{config_dir}}/{{hostname}}.init.conf
+      commit_changes=True
+      replace_config=False
+      diff_file={{config_dir}}/{{hostname}}.init.diff

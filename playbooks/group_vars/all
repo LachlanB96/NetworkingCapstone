@@ -1,0 +1,4 @@
+ansible_connection: local
+
+## baseconfig
+config_dir: ../configs
