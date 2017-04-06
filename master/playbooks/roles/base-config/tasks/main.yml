@@ -1,0 +1,5 @@
+---
+
+- name: generate base configs from templates
+  template: src=../templates/{{profile}}.j2 dest={{config_dir}}/{{hostname}}/baseconfig.txt
+ 
