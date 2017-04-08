@@ -1,0 +1,12 @@
+---
+- name: Get interface Information
+  gather_facts: no
+  hosts: all
+  tasks:
+    - name: Show bgp neighbors
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - show ip interface br
+      register: info
+    - debug: var=info.stdout_lines
