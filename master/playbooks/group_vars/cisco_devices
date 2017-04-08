@@ -1,0 +1,25 @@
+---
+ansible_connection: local
+## Base Config
+domain_name: mh
+
+## Spanning Tree
+spanningtree_mode: mst
+spanningtree_name: Home Lab
+stp_instances:
+  - instance: "1 vlan 100-199"
+  - instance: "2 vlan 200-299"
+  - instance: "3 vlan 300-399"
+  - instance: "4 vlan 400-499"
+  - instance: "5 vlan 500-599"
+  - instance: "6 vlan 600-699"
+  - instance: "7 vlan 700-799"
+  - instance: "8 vlan 800-899"
+  - instance: "9 vlan 900-999"
+  - instance: "10 vlan 1000-1099"
+  - instance: "11 vlan 1100-1199"
+  - instance: "12 vlan 1200-1299"
+  - instance: "13 vlan 1300-1399"
+  - instance: "14 vlan 1400-1499"
+  - instance: "15 vlan 1500-1599"
+spanningtree_priority: "mst 0-15 priority 4096"

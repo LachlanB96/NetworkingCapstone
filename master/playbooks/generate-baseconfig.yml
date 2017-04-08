@@ -1,6 +1,6 @@
 ---
 - name: Generate init config
-  hosts: all
+  hosts: cisco_devices
   gather_facts: no
   connection: local
 

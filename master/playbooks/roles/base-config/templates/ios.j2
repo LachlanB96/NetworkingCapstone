@@ -1,28 +1,4 @@
 !
 hostname {{hostname}}
 !
-{% if system_mtu is defined %}
-system mtu {{system_mtu}}
-{% endif %}
-
 ip domain name {{domain_name}}
-
-{% if ftp_source_interface is defined %}
-ip ftp source-interface {{ftp_source_interface}}
-{% endif %}
-
-{% for acl1 in acl1s %}
-access-list {{acl1.line}}
-{% endfor %}
-!
-{% for acl2 in acl2s %}
-access-list {{acl2.line}}
-{% endfor %}
-!
-{% for acl3 in acl3s %}
-access-list {{acl3.line}}
-{% endfor %}
-!
-{% for acl4 in acl4s %}
-access-list {{acl4.line}}
-{% endfor %}

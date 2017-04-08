@@ -1,2 +1,4 @@
-##
+## Base Config
 hostname: core-r01-syd
+profile: ios
+layer: 3

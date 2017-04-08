@@ -1,8 +1,19 @@
 [syd]
-core-r01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3001 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-data-r01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3002 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-data-r02-syd ansible_host=michael-huang.mynetgear.com ansible_port=3003 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-data-agg-sw01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3003 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-data-agg-sw02-syd ansible_host=michael-huang.mynetgear.com ansible_port=3003 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-data-edge-sw02-syd ansible_host=michael-huang.mynetgear.com ansible_port=3003 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
-potato ansible_host=michael-huang.mynetgear.com ansible_port=22 ansible_user=ansible ansible_pass=c15C0! ansible_auth=c15C0!
+core-r01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3001 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+data-r01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3002 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+data-r02-syd ansible_host=michael-huang.mynetgear.com ansible_port=3003 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+data-agg-sw01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3004 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+data-agg-sw02-syd ansible_host=michael-huang.mynetgear.com ansible_port=3005 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+data-edge-sw01-syd ansible_host=michael-huang.mynetgear.com ansible_port=3006 ansible_ssh_user=ansible ansible_ssh_pass=c15C0! ansible_auth=c15C0!
+potato ansible_host=michael-huang.mynetgear.com ansible_port=22 ansible_ssh_user=root ansible_ssh_pass=W4t3RtuRt13
+
+[servers]
+potato
+
+[cisco_devices]
+core-r01-syd
+data-r01-syd
+data-r02-syd
+data-agg-sw01-syd
+data-agg-sw02-syd
+data-edge-sw01-syd

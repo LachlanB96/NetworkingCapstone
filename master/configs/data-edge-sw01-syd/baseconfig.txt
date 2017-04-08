@@ -1,0 +1,4 @@
+!
+hostname data-edge-sw01-syd
+!
+ip domain name mh

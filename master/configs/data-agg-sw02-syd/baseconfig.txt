@@ -1,0 +1,4 @@
+!
+hostname data-agg-sw02-syd
+!
+ip domain name mh

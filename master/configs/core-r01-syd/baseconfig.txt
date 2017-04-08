@@ -1,0 +1,4 @@
+!
+hostname core-r01-syd
+!
+ip domain name mh
