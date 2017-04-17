@@ -23,3 +23,10 @@ stp_instances:
   - instance: "14 vlan 1400-1499"
   - instance: "15 vlan 1500-1599"
 spanningtree_priority: "mst 0-15 priority 4096"
+
+provider:
+  host: "{{ ansible_host }}"
+  port: "{{ ansible_port }}"
+  username: "{{ ansible_ssh_user }}"
+  password: "{{ ansible_ssh_pass }}"
+  auth_pass: "{{ ansible_auth }}"
