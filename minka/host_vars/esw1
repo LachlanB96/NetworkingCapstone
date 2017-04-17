@@ -1,0 +1,4 @@
+##baseconfig
+hostname: esw1
+layer: 3
+os: cisco
