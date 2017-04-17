@@ -1,0 +1,12 @@
+---
+- name: Get ospf neighbor
+  gather_facts: no
+  hosts: cisco_devices
+  tasks:
+    - name: Show ospf neighbor
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - show ip ospf neighbor
+      register: info
+    - debug: var=info.stdout_lines

@@ -1,0 +1,12 @@
+---
+- name: Get arp table
+  gather_facts: no
+  hosts: cisco_devices
+  tasks:
+    - name: Show arp table
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - show ip arp
+      register: info
+    - debug: var=info.stdout_lines
