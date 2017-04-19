@@ -27,6 +27,7 @@ spanningtree_priority: "mst 0-15 priority 4096"
 provider:
   host: "{{ ansible_host }}"
   port: "{{ ansible_port }}"
+  timeout: "100"
   username: "{{ ansible_ssh_user }}"
   password: "{{ ansible_ssh_pass }}"
   auth_pass: "{{ ansible_auth }}"

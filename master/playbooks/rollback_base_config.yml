@@ -1,0 +1,13 @@
+---
+- name: Rollback to base configuration
+  gather_facts: no
+  hosts: cisco_devices
+  tasks:
+    - name: Rollback
+      ios_config:
+        provider: "{{ provider }}"
+        force: true
+        line:
+          - configure replace flash:base.txt force
+      register: info
+    - debug: var=info.stdout_lines

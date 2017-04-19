@@ -15,4 +15,3 @@
             replace_config=False
             diff_file={{config_dir}}/rollback.diff
             optional_args="port={{ansible_port}}"
-

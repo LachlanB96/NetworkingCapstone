@@ -1,0 +1,3 @@
++!
++exit 
++configure replace flash:base.txt force
