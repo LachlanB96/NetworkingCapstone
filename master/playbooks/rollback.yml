@@ -1,18 +1,12 @@
 ---
-
-- name: Rollback to base configuration
+- name: Rollback
+  gather_facts: no
   hosts: cisco_devices
-
   tasks:
-    - name: Rollback to base
-      napalm_install_config:
-            hostname="{{ ansible_host }}"
-            username="{{ ansible_ssh_user }}"
-            password="{{ ansible_ssh_pass }}"
-            dev_os=ios
-            config_file={{config_dir}}/rollback.txt
-            commit_changes=True
-            replace_config=False
-            diff_file={{config_dir}}/rollback.diff
-            optional_args="port={{ansible_port}}"
-
+    - name: Rollback
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - configure replace flash:base.txt force
+      register: info
+    - debug: var=info.stdout_lines
