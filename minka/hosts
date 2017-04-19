@@ -43,4 +43,4 @@
 ## db-[99:101]-node.example.com
 
 [Servers]
-alias ansible_ssh_host=10.0.1.254
+esw1 ansible_ssh_host=10.0.1.254
