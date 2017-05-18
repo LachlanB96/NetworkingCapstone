@@ -42,38 +42,59 @@ running_mode = sys.argv[1]
 print("Currently running in %s mode." % running_mode)
 
 
+# First arg defines running mode
+connection_group = sys.argv[2]
+print("Connectiong type is %s mode." % connection_group)
+
+
 Options = namedtuple('Options', [
-    'connection', 
-    'module_path', 
-    'forks', 
-    'become', 
-    'become_method', 
-    'become_user', 
-    'check'
+        'connection', 
+        'module_path', 
+        'forks', 
+        'become', 
+        'become_method', 
+        'become_user', 
+        'check'
     ]
 )
 
-hosts = [
-    '10.0.0.1',
-    '10.0.1.2'
+if connection_group == "local":
+    hosts = [
+        'localhosts'
     ]
+    options = Options(
+        connection='local', 
+        module_path='.', 
+        forks=100, 
+        become=None, 
+        become_method=None, 
+        become_user=None, 
+        check=False
+    )
+elif connection_group == "ios":
+    hosts = [
+        '10.0.0.1',
+        '10.0.1.2'
+    ]
+    options = Options(
+        connection='ssh', 
+        module_path='.', 
+        forks=100, 
+        become=None, 
+        become_method=None, 
+        become_user=None, 
+        check=True
+    )
 
 playbooks = [
-    './show_clock.yml'
+        './show_clock.yml'
     ]
 
 
 
 variable_manager = VariableManager()
 loader = DataLoader()
-options = Options(
-    connection='local', 
-    module_path='.', 
-    forks=100, 
-    become=None, 
-    become_method=None, 
-    become_user=None, 
-    check=False)
+
 passwords = dict(vault_pass='secret')
 results_callback = ResultCallback()
 

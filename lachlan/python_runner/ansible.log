@@ -307,3 +307,9 @@ seems to be invalid: 'module' object has no attribute 'CallbackModule'
 
 2017-05-18 02:55:28,382 p=50141 u=admin |   [WARNING]: Host file not found: localhost
 
+2017-05-18 03:23:35,653 p=50626 u=admin |   [WARNING]: Host file not found: localhost
+
+2017-05-18 03:24:50,411 p=50679 u=admin |   [WARNING]: Host file not found: localhost
+
+2017-05-18 03:25:19,981 p=50741 u=admin |   [WARNING]: Host file not found: localhost
+
