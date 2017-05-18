@@ -1,18 +1,17 @@
 ---
 
-- name: Rollback to base configuration
+- name: Commit base config
   hosts: cisco_devices
 
   tasks:
-    - name: Rollback to base
+    - name: Commit base configuration
       napalm_install_config:
             hostname="{{ ansible_host }}"
             username="{{ ansible_ssh_user }}"
             password="{{ ansible_ssh_pass }}"
             dev_os=ios
-            config_file={{config_dir}}/rollback.txt
+            config_file={{config_dir}}/{{hostname}}/baseconfig.txt
             commit_changes=True
             replace_config=False
-            diff_file={{config_dir}}/rollback.diff
+            diff_file={{config_dir}}/{{hostname}}/baseconfig.diff
             optional_args="port={{ansible_port}}"
-

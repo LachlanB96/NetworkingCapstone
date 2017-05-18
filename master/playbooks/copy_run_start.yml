@@ -1,0 +1,12 @@
+---
+- name: Copy run start
+  gather_facts: no
+  hosts: cisco_devices
+  tasks:
+    - name: Copy run start
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - copy running-config startup-config
+      register: info
+    - debug: var=info.stdout_lines

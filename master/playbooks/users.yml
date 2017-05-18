@@ -1,0 +1,12 @@
+---
+- name: Rollback
+  gather_facts: no
+  hosts: cisco_devices
+  tasks:
+    - name: Rollback
+      ios_command:
+        provider: "{{ provider }}"
+        commands:
+          - configure replace flash:base.txt force
+      register: info
+    - debug: var=info.stdout_lines
