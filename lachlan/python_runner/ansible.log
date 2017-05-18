@@ -1,0 +1,309 @@
+2017-05-18 01:36:57,493 p=13141 u=admin |  ERROR! Missing target hosts
+2017-05-18 01:37:18,488 p=13161 u=admin |  ERROR! Missing target hosts
+2017-05-18 01:59:44,592 p=47306 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:00:51,534 p=47373 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:04:23,178 p=47574 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:05:19,789 p=47602 u=admin |   [WARNING]: Host file not found: localhost
+
+2017-05-18 02:05:19,901 p=47602 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:05:19,903 p=47602 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:05:20,027 p=47602 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:05:20,028 p=47602 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:05:20,362 p=47602 u=admin |  changed: [localhost]
+2017-05-18 02:05:20,362 p=47602 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x1d13d10>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:05:20,363 p=47602 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/logger.CallbackModule object at
+0x1d131d0>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:05:20,364 p=47602 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:05:20,455 p=47602 u=admin |  ok: [localhost] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.py\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml"
+}
+2017-05-18 02:07:14,894 p=47662 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:07:14,898 p=47662 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:07:14,961 p=47662 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:07:14,961 p=47662 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:07:15,299 p=47662 u=admin |  changed: [localhost]
+2017-05-18 02:07:15,299 p=47662 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x1cb3d10>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:07:15,300 p=47662 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/logger.CallbackModule object at
+0x1cb31d0>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:07:15,301 p=47662 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:07:15,377 p=47662 u=admin |  ok: [localhost] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.py\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml"
+}
+2017-05-18 02:07:44,926 p=47709 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:07:44,929 p=47709 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:07:44,987 p=47709 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:07:44,988 p=47709 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:07:45,323 p=47709 u=admin |  changed: [localhost]
+2017-05-18 02:07:45,323 p=47709 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x3215d10>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:07:45,324 p=47709 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/logger.CallbackModule object at
+0x32151d0>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:07:45,325 p=47709 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:07:45,400 p=47709 u=admin |  ok: [localhost] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.py\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml"
+}
+2017-05-18 02:08:22,601 p=47756 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:08:22,604 p=47756 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:08:22,662 p=47756 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:08:22,662 p=47756 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:08:22,990 p=47756 u=admin |  changed: [localhost]
+2017-05-18 02:08:22,990 p=47756 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x1931d10>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:08:22,991 p=47756 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/logger.CallbackModule object at
+0x19311d0>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:08:22,992 p=47756 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:08:23,069 p=47756 u=admin |  ok: [localhost] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.py\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml"
+}
+2017-05-18 02:08:23,071 p=47756 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:08:23,073 p=47756 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:08:23,229 p=47756 u=admin |  changed: [localhost]
+2017-05-18 02:08:23,229 p=47756 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x155c350>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:08:23,229 p=47756 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/logger.CallbackModule object at
+0x143dc50>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:08:23,230 p=47756 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:08:23,309 p=47756 u=admin |  ok: [localhost] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.py\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml"
+}
+2017-05-18 02:10:28,483 p=47863 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:10:28,493 p=47863 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:10:28,554 p=47863 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:10:28,554 p=47863 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:10:29,025 p=47863 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:10:29,025 p=47863 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x1f03ed0>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:10:29,025 p=47863 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/unused_logger.CallbackModule
+object at 0x1f03790>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:10:29,026 p=47863 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:10:29,104 p=47863 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:10:29,106 p=47863 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:10:29,108 p=47863 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:10:29,263 p=47863 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:10:29,263 p=47863 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/callback_skeleton.CallbackModule object at 0x1c23350>): runner_on_ok() takes
+exactly 3 arguments (2 given)
+
+2017-05-18 02:10:29,264 p=47863 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/unused_logger.CallbackModule
+object at 0x1b03c50>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:10:29,264 p=47863 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:10:29,342 p=47863 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.py\ncallback_skeleton.pyc\nexample.gif\n__init__.py\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:11:18,034 p=47945 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:11:18,047 p=47945 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:11:18,111 p=47945 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:11:18,112 p=47945 u=admin |  [DEPRECATION WARNING]: ansible.utils.unicode.to_bytes is deprecated.  Use 
+ansible.module_utils._text.to_bytes instead.
+This feature will be removed in version 2.4.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2017-05-18 02:11:18,595 p=47945 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:11:18,596 p=47945 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_callback_skeleton.CallbackModule object at 0x1e79350>): runner_on_ok()
+takes exactly 3 arguments (2 given)
+
+2017-05-18 02:11:18,596 p=47945 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/unused_logger.CallbackModule
+object at 0x1eb30d0>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:11:18,597 p=47945 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:11:18,677 p=47945 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.pyc\nexample.gif\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_callback_skeleton.py\nunused_callback_skeleton.pyc\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:11:18,679 p=47945 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:11:18,681 p=47945 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:11:18,837 p=47945 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:11:18,838 p=47945 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_callback_skeleton.CallbackModule object at 0x1bb37d0>): runner_on_ok()
+takes exactly 3 arguments (2 given)
+
+2017-05-18 02:11:18,838 p=47945 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/unused_logger.CallbackModule
+object at 0x1e74190>): runner_on_ok() takes exactly 3 arguments (2 given)
+
+2017-05-18 02:11:18,839 p=47945 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:11:18,917 p=47945 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.pyc\nexample.gif\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_callback_skeleton.py\nunused_callback_skeleton.pyc\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:12:33,742 p=48054 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:12:33,746 p=48054 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_callback_skeleton.py) as it seems to be invalid: 'module' object has no
+attribute 'CallbackModule'
+
+2017-05-18 02:12:33,749 p=48054 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_logger.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:12:33,750 p=48054 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:12:33,899 p=48054 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:12:34,665 p=48054 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:12:34,668 p=48054 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:12:34,803 p=48054 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.pyc\nexample.gif\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_callback_skeleton.py\nunused_callback_skeleton.pyc\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:12:34,821 p=48054 u=admin |  PLAY [Ansible Play] **********************************************************************
+2017-05-18 02:12:34,822 p=48054 u=admin |  TASK [command] ***************************************************************************
+2017-05-18 02:12:35,072 p=48054 u=admin |  changed: [10.0.0.1]
+2017-05-18 02:12:35,073 p=48054 u=admin |  TASK [debug] *****************************************************************************
+2017-05-18 02:12:35,148 p=48054 u=admin |  ok: [10.0.0.1] => {
+    "changed": false, 
+    "msg": "ansible.cfg\nansible.log\ncallback_skeleton.pyc\nexample.gif\ninventory\nlogger.pyc\nREADME.md\nrun.py\nrun.pyc\nshow_clock.retry\nshow_clock.yml\nunused_callback_skeleton.py\nunused_callback_skeleton.pyc\nunused_logger.py\nunused_logger.pyc"
+}
+2017-05-18 02:13:34,972 p=48164 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/run.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:13:34,976 p=48164 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_callback_skeleton.py) as it seems to be invalid: 'module' object has no
+attribute 'CallbackModule'
+
+2017-05-18 02:13:34,977 p=48164 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/ansible-cisco-ios-
+example/unused_logger.py) as it seems to be invalid: 'module' object has no attribute
+'CallbackModule'
+
+2017-05-18 02:13:35,516 p=48164 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(</home/admin/Documents/ansible/ansible-cisco-ios-example/run.ResultCallback object at
+0x188dd90>): global name 'json' is not defined
+
+2017-05-18 02:13:35,785 p=48164 u=admin |   [WARNING]: Failure using method (v2_runner_on_ok) in callback plugin
+(<__main__.ResultCallback object at 0x1497910>): global name 'json' is not defined
+
+2017-05-18 02:14:55,818 p=48327 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:14:55,828 p=48327 u=admin |   [WARNING]: Skipping plugin
+(/home/admin/Documents/ansible/python_runner/unused/unused_callback_skeleton.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:14:55,828 p=48327 u=admin |   [WARNING]: Skipping plugin
+(/home/admin/Documents/ansible/python_runner/unused/unused_logger.py) as it seems to be
+invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:23:50,067 p=48612 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:23:50,107 p=48612 u=admin |   [WARNING]: Skipping plugin
+(/home/admin/Documents/ansible/python_runner/unused/unused_callback_skeleton.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:23:50,107 p=48612 u=admin |   [WARNING]: Skipping plugin
+(/home/admin/Documents/ansible/python_runner/unused/unused_logger.py) as it seems to be
+invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:26:14,151 p=48750 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:27:12,547 p=48833 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:27:28,672 p=48905 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:29:13,321 p=48998 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/run.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:30:32,433 p=49105 u=admin |   [WARNING]: Skipping plugin (/home/admin/Documents/ansible/python_runner/main.py) as it
+seems to be invalid: 'module' object has no attribute 'CallbackModule'
+
+2017-05-18 02:55:28,382 p=50141 u=admin |   [WARNING]: Host file not found: localhost
+
