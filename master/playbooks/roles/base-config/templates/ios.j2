@@ -2,3 +2,44 @@
 hostname {{hostname}}
 !
 ip domain name {{domain_name}}
+!
+no ip domain lookup
+!
+archive
+ log config
+  logging enable
+  logging size 200
+  notify syslog contenttype plaintext
+  hidekeys
+ write-memory
+ time-period 1440
+!
+line con 0
+exec-timeout 5 0
+login local
+logging synchronous
+line vty 0 4
+logging synchronous
+exec-timeout 30 0
+login local
+transport preferred ssh
+transport input telnet ssh
+line vty 5 15
+logging synchronous
+exec-timeout 15 0
+privilege level 3
+login local
+transport preferred ssh
+transport input telnet ssh
+!
+ip ssh authentication-retries 3
+ip ssh maxstartups 5
+ip ssh time-out 120
+!
+{% if layer == 2 %}
+no ip routing
+{% endif %}
+{% if layer == 3 %}
+ip routing
+{% endif %}
+!

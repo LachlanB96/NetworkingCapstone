@@ -1,4 +1,5 @@
 ## Base Config
 hostname: core-r01-syd
 profile: ios
+device: router
 layer: 3

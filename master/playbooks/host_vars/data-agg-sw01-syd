@@ -1,6 +1,5 @@
 ## Base Config
 hostname: data-agg-sw01-syd
 profile: ios
+device: switch
 layer: 3
-
-

@@ -1,6 +1,7 @@
 ## Base Config
 hostname: data-edge-sw01-syd
 profile: ios
+device: switch
 layer: 2
 
 

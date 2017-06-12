@@ -1,7 +1,7 @@
 ---
 
 - name: diff base config
-  hosts: all
+  hosts: cisco_devices
 
   tasks:
     - name: push base config

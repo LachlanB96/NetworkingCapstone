@@ -1,0 +1,26 @@
+-no ip domain lookup
++archive
++ log config
++  logging enable
++  logging size 200
++  notify syslog contenttype plaintext
++ write-memory
++ time-period 1440
++exec-timeout 5 0
++login local
++logging synchronous
++logging synchronous
++exec-timeout 30 0
++login local
++transport preferred ssh
++transport input telnet ssh
++logging synchronous
++exec-timeout 15 0
++privilege level 3
++login local
++transport preferred ssh
++transport input telnet ssh
++ip ssh authentication-retries 3
++ip ssh maxstartups 5
++ip ssh time-out 120
++ip routing
